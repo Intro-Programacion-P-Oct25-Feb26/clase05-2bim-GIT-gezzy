@@ -20,17 +20,16 @@ public class Principal {
         String nombre;
         String ciudad;
         String apellidoRetornado;
-        
+
         double[] misNotas;
         double promedio;
-        
+
         nombre = DatoPersonal.obtenerNombre();
         apellidoRetornado = DatoPersonal.obtenerApellido();
         ciudad = DatosUbicacion.obtenerCiudad();
         misNotas = DatoAcademico.obtenerNotas(4);
         promedio = DatoFinal.obtenerPromedio(misNotas);
-        
-        
+
         System.out.printf("Los datos ingresados son:\n"
                 + "Nombre: %s\n"
                 + "Apellido: %s\n"
@@ -41,5 +40,33 @@ public class Principal {
                 ciudad,
                 promedio);
     }
-    
+
 }
+/*
+Generar una solucion que permita obtener los datos (ingresados por teclado)
+de un usuario (estudiante) mediante la importacion de paquetes en el metodo 
+principal del paquete01. Estos paquetes importaran clases que 
+tambien importaran metodos, todos estos creados por el desarrollador. El
+programa debe presentar un reporte, utilizando variables que
+seran valores retornados de cada funcion invocada exclusivamente en el main.
+Ejemplo:
+
+Los datos ingresados son:
+Nombre: Mateo
+Apellido: Guachizaca
+Ciudad: Loja
+Promedio: 9.67
+
+En donde: 
+- nombre y apelldio deben ser valores retornados por una funcion de una
+clase llamada DatoPersonal.
+- ciudad deber ser un valor retornado por una funcion de una clase llamada 
+DatoUbicacion.
+- las notas del estudiante deben ser valores ingresados por teclado en una 
+funcion de una clase llamada DatoAcademico que debera recibir
+como argumentos un total de 4 calificaciones y almacenarlas en un arreglo
+unidimensional.
+- promedio debera ser un valor retornado por una funcion de una clase llamada
+DatoFinal que debera recibir el arreglo unidmensional como argumento para 
+asi poder obtener el promedio.
+ */
